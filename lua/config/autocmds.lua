@@ -1,14 +1,25 @@
+local autocmd = vim.api.nvim_create_autocmd
+
 -- Highlight yanked text
-vim.api.nvim_create_autocmd("TextYankPost", {
+autocmd("TextYankPost", {
     callback = function()
         vim.highlight.on_yank({
             timeout = 40,
         })
     end,
+    desc = "Highlight Yanked Text",
+})
+
+-- Disable new line comment
+autocmd("BufEnter", {
+  callback = function()
+    vim.opt.formatoptions:remove { "c", "r", "o" }
+  end,
+  desc = "Disable New Line Comment",
 })
 
 -- Go
-vim.api.nvim_create_autocmd("BufEnter", {
+autocmd("BufEnter", {
     pattern = { "*.go" },
     callback = function()
         vim.opt_local.expandtab = false
