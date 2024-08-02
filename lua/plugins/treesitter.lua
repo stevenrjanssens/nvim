@@ -55,7 +55,8 @@ return {
             },
 
             indent = {
-                enable = true
+                enable = true,
+                disable = { "python" },
             },
         })
     end,
