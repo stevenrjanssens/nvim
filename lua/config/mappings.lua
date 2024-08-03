@@ -2,8 +2,8 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 -- Yank into system clipboard
-vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
-vim.keymap.set({"n"}, "<leader>Y", [["+Y]])
+vim.keymap.set({"n", "v"}, "<leader>y", [["+y]], { desc = "Yank into system clipboard" })
+vim.keymap.set({"n"}, "<leader>Y", [["+Y]], { desc = "Yank line(s) into system clipboard" })
 
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<cr>") 
 
