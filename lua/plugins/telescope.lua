@@ -14,5 +14,10 @@ return {
         vim.keymap.set("n", "<C-p>", builtin.git_files, {desc = "Fuzzy find git (project) files" })
         vim.keymap.set("n", "<leader><leader>", builtin.buffers, { desc = "Fuzzy find buffers" })
         vim.keymap.set("n", "<leader>/", builtin.current_buffer_fuzzy_find, { desc = "Fuzzy find current buffer" })
+
+        vim.keymap.set("n", "<leader>*", function()
+            local word = vim.fn.expand("<cword>")
+            builtin.grep_string({ search = word })
+        end, { desc = "Fuzzy find current word" })
     end,
 }
