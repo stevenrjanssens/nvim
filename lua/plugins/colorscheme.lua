@@ -1,6 +1,7 @@
 -- PaperColor doesn't support semantic highlighting
 -- return {
 --     "NLKNguyen/papercolor-theme",
+--     lazy = false,
 --     priority = 1000,
 --     init = function()
 --         vim.cmd.colorscheme("papercolor")
@@ -10,6 +11,7 @@
 -- return {
 --     {
 --         "catppuccin/nvim",
+--         lazy = false,
 --         name = "catpuccin",
 --         priority = 1000,
 --         config = function()
