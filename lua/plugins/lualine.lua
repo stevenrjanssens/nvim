@@ -46,6 +46,7 @@ return {
                 inactive_winbar = {},
                 extensions = {}
             })
+            vim.opt.showmode = false
         end,
     }
 }
