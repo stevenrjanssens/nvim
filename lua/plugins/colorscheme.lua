@@ -53,8 +53,11 @@ return {
                 integrations = {
                     cmp = true,
                     gitsigns = true,
+                    native_lsp= {enabled = true},
                     nvimtree = true,
+                    telescope = true,
                     treesitter = true,
+                    treesitter_context = true,
                     notify = false,
                     mini = {
                         enabled = true,
