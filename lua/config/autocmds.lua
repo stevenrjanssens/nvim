@@ -31,6 +31,14 @@ autocmd("BufEnter", {
     end,
 })
 
+-- LaTeX
+autocmd("BufEnter", {
+    pattern = { "*.tex" },
+    callback = function()
+        vim.opt_local.textwidth = 78
+    end,
+})
+
 -- Create the lsp keymaps only when a language server is active
 vim.api.nvim_create_autocmd('LspAttach', {
   desc = 'LSP actions',
