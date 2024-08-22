@@ -1,3 +1,3 @@
 # My Neovim Configuration
 
-Put inside `$HOME/.config`.
+Put inside `$XDG_CONFIG_HOME`, this is `~/.config` on Unix.
