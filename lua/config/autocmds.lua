@@ -36,3 +36,9 @@ vim.api.nvim_create_autocmd('LspAttach', {
     -- vim.keymap.set('n', '<F4>', '<cmd>lua vim.lsp.buf.code_action()<cr>', opts)
   end,
 })
+
+-- Automatically remove trailing whitespace on save
+vim.api.nvim_create_autocmd({"BufWritePre"}, {
+    pattern = {"*"},
+    command = [[%s/\s\+$//e]],
+})
