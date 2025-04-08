@@ -20,3 +20,6 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
     spec = "plugins"
 })
+
+-- auto-enable LSPs, configured in lua/config/lsp
+vim.lsp.enable("gopls")
