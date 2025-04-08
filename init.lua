@@ -22,4 +22,4 @@ require("lazy").setup({
 })
 
 -- auto-enable LSPs, configured in lua/config/lsp
-vim.lsp.enable("gopls")
+vim.lsp.enable({ "gopls", "luals" })
