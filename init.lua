@@ -21,5 +21,5 @@ require("lazy").setup({
     spec = "plugins"
 })
 
--- auto-enable LSPs, configured in lua/config/lsp
+-- auto-enable LSPs, configured in lsp/
 vim.lsp.enable({ "gopls", "luals" })
