@@ -6,8 +6,8 @@ return {
             -- A list of parser names, or "all"
             ensure_installed = {
                 "bash", "c", "comment", "diff", "gitcommit", "go", "gomod",
-                "gosum", "gowork", "markdown", "markdown_inline", "latex",
-                "lua", "python", "vimdoc"
+                "gosum", "gowork", "html", "markdown", "markdown_inline",
+                "latex", "lua", "python", "vimdoc", "yaml"
             },
 
             -- Install parsers synchronously (only applied to `ensure_installed`)
